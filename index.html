@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Gallery phone image picker </title>
+</head>
+<body>
+    <h1 class="bg-success p-4 m-4 text-uppercase text-center">phone image picture gallery</h1>
+        <div class="container">
+              
+            <div class="row mb-4" id="info">
+                <h3 class="p-2 text-white" id="heading">Pick your favorite mobile phone</h3> <!--we can also add the element from js by using prepend -->
+                <select class="form-control" id="ImgSelector">
+                    <option value="all">All Mobile phone</option>
+                    <option value="iphone">iphone</option>
+                    <option value="samsung">samsung</option>
+                    <option value="vivo">vivo</option>
+                    <option value="mi">mi</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-md-3 all iphone ">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGlwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="iphone" title="iphone image">
+                    </div>
+                </div>
+                <div class="col-md-3 all samsung">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Ftc3VuZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="samsung" title="samsung image">
+                    </div>
+                </div>
+                <div class="col-md-3 all vivo">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1613123322723-8d2185c669d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dml2b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="vivo" title="vivo image">
+                    </div>
+                </div>
+                <div class="col-md-3 all mi">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1591531040045-f67662954f54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWklMjBwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="mi" title="mi image">
+                    </div>
+                </div>
+                <div class="col-md-3 all iphone ">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1611791484670-ce19b801d192?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGlwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="iphone" title="iphone image">
+                    </div>
+                </div>
+                <div class="col-md-3 all samsung">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2Ftc3VuZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="samsung" title="samsung image">
+                    </div>
+                </div>
+                <div class="col-md-3 all vivo">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1614441884165-e70d6d432c30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dml2b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="vivo" title="vivo image">
+                    </div>
+                </div>
+                <div class="col-md-3 all mi">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1648520756289-36a67271f6f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWklMjBwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="mi" title="mi image">
+                    </div>
+                </div>
+                <div class="col-md-3 all iphone">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1537589376225-5405c60a5bd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGlwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="iphone" title="iphone image">
+                    </div>
+                </div>
+                <div class="col-md-3 all samsung">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1597762470488-3877b1f538c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt="samsung" title=" image">
+                    </div>
+                </div>
+                <div class="col-md-3 all vivo">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1526222344609-ca3e80ea3b06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dml2b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="vivo" title="vivo image">
+                    </div>
+                </div>
+                <div class="col-md-3 all mi">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1598327106026-d9521da673d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1pJTIwcGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt="mi" title="mi image">
+                    </div>
+                </div>
+                <div class="col-md-3 all iphone">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXBob25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" alt="iphone" title="iphone image">
+                    </div>
+                </div><div class="col-md-3 all samsung">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1611407019488-0a354195b618?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNhbXN1bmd8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt="samsung" title="samsung image">
+                    </div>
+                </div>
+                <div class="col-md-3 all vivo">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1532918538686-38ed9e18627e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHZpdm98ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt="vivo" title="vivo image">
+                    </div>
+                </div>
+                <div class="col-md-3 all mi">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1600087626014-e652e18bbff2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1pJTIwcGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt="mi" title="mi image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
